@@ -23,4 +23,11 @@ class HomeController extends AbstractController
     {
         return $this->render("home/experience.html.twig");
     }
+         /**
+     * @Route("/portfolio", name="portfolio")
+     */
+    public function portfolio(): Response
+    {
+        return $this->render("home/portfolio.html.twig");
+    }
 }
